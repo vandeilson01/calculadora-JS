@@ -1,5 +1,5 @@
 <h1 align="center"> 
- Super Trunfo 🚀 
+ Calculadora 🚀 
 </h1>
 
 
