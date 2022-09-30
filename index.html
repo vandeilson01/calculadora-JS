@@ -1,0 +1,149 @@
+<!-- <!doctype html> -->
+<html lang="pt-br">
+  <head>
+    <title>Calculadora</title>
+    <meta charset="utf-8">
+
+    <style>
+        :root{
+  background-color: #EEEEEE;
+  font-family: Arial, Helventica;
+}
+
+html,body{
+  padding: 0;
+  margin: 0;
+  background-image: url('https://festivalteen.com.br/wp-content/uploads/2020/03/harry-potter.jpg');
+  background-repeat: no-repeat;
+  background-size: 110%;
+  text-align: center;
+}
+
+.alura:after{
+  background-color: rgba(0,0,0,.5);
+  content: ' ';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+/*   z-index: 3; */
+}
+h1{
+  color: white;
+  background-color: rgba(156, 86, 44, 0.5);
+}
+
+a{
+  background: orangered;
+  border: 4px solid orangered;
+}
+.calculadora{
+  position: absolute;
+  width: 363px;
+  margin: 100px 0 0 25%;
+  background: rgb(116,16,129);
+background: linear-gradient(0deg, rgba(116,16,129,0.8015581232492998) 34%, rgba(12,18,66,0.7931547619047619) 75%);
+  border-radius: 10px 10px 10px 10px;
+  border: 3px double white;
+}
+
+.ss:focus{
+  border: none;
+}
+.ss,.igual{
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  float: left;
+  margin: 0;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  color: #FFFFFF;
+/*   border: 1px solid white; */
+  margin: 0;
+  position: static;
+  line-height: 60px;
+  text-align: center;
+}
+
+.calculadora > .ss{
+  width: 90px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+#calc{
+  width: 273px;
+  height: 60px;
+  float: right;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(225, 255, 255,.5);
+  margin: 0;
+  opacity: 0.8;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 60px;
+}
+
+.ss:hover,.igual:hover{
+  opacity: 0.5;
+  background: rgba(10, 10, 10,.3);
+  cursor: pointer;
+}
+
+.calculadora .result:hover{
+  opacity: 0.6;
+}
+
+
+/* .ss{
+  display: block;
+} */
+    </style>
+  </head>
+  <body>
+    
+    <h1 class="alura">Imersão <a>dev_</a></h1>
+       
+    <section class="calculadora">
+      <div value="C" onclick="as(this)" class="ss">C</div>
+      <div type="text" id="calc"></div>
+      
+      <div class="bu">
+        <div onclick="as(this)" class="ss">7</div>
+        <div onclick="as(this)" class="ss">8</div>
+        <div onclick="as(this)" class="ss">9</div>
+        <div onclick="as(this)" class="ss">/</div>
+    </div>
+      
+      
+      <div class="bu">
+        <div onclick="as(this)" class="ss">4</div>
+        <div onclick="as(this)" class="ss">5</div>
+        <div onclick="as(this)" class="ss">6</div>
+        <div onclick="as(this)" class="ss">*</div>        
+      </div>
+      
+      <div class="bu">
+        <div onclick="as(this)" class="ss">1</div>
+        <div onclick="as(this)" class="ss">2</div>
+        <div onclick="as(this)" class="ss">3</div>
+        <div onclick="as(this)" class="ss">-</div>        
+      </div>
+      
+      <div class="bu">
+        <div onclick="as(this)" class="ss">0</div>
+        <div onclick="as(this)" class="ss">.</div>
+        <div onclick="as(this)" class="igual">=</div>
+        <div onclick="as(this)" class="ss">+</div>        
+      </div>
+    </section>
+    
+    
+    <script src="view.js"></script>
+  </body>
+</html>
